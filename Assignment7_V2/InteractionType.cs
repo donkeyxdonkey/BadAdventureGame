@@ -1,8 +1,7 @@
-﻿namespace Assignment7_V2
+﻿namespace Assignment7_V2;
+
+public enum InteractionType
 {
-    public enum InteractionType
-    {
-        Map,
-        Inventory
-    }
+    Map,
+    Inventory
 }
