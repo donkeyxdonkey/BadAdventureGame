@@ -1,4 +1,4 @@
-﻿namespace Assignment7_V2;
+﻿namespace Assignment7_V2.Enumerations;
 
 public enum InteractionType
 {

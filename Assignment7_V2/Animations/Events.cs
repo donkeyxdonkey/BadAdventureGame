@@ -1,4 +1,5 @@
-﻿using System.Drawing;
+﻿using Assignment7_V2.Enumerations;
+using System.Drawing;
 
 namespace Assignment7_V2.Animations;
 
@@ -11,20 +12,33 @@ public class Events
             case QuestItems.Cat:
                 return GetCatAnimationEvent();
             case QuestItems.Fishing_Rod:
-                //GetHelmAnimationEvent();
+                //return GetHelmAnimationEvent();
                 break;
             case QuestItems.Burger:
-                //GetGoatAnimationEvent();
+                //return GetGoatAnimationEvent();
                 break;
             case QuestItems.Raindeer_Dung:
-                //GetCat2AnimationEvent();
-                break;
+                return GetCat2AnimationEvent();
             case QuestItems.Snake_Skin:
-                //GetElfAnimationEvent();
+                //return GetElfAnimationEvent();
                 break;
         }
 
         return [];
+    }
+
+    [System.Diagnostics.CodeAnalysis.SuppressMessage("Interoperability", "CA1416:Validate platform compatibility", Justification = "<Pending>")]
+    private static AnimationEvent[] GetCat2AnimationEvent()
+    {
+        return
+        [
+            new(new Point(64, 86), delay: 100, flipType: RotateFlipType.Rotate90FlipX),
+            new(new Point(70, 92), delay: 150, flipType: RotateFlipType.Rotate270FlipXY),
+            new(new Point(64, 97), delay: 100, flipType: RotateFlipType.Rotate180FlipY),
+            new(new Point(64, 110), delay: 150, flipType: RotateFlipType.Rotate270FlipXY),
+            new(new Point(64, 128), delay: 100, visible: false, flipType: RotateFlipType.Rotate180FlipY),
+
+        ];
     }
 
     [System.Diagnostics.CodeAnalysis.SuppressMessage("Interoperability", "CA1416:Validate platform compatibility", Justification = "<Pending>")]

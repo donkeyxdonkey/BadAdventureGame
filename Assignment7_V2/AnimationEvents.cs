@@ -1,4 +1,5 @@
 ﻿using System.Drawing;
+using Assignment7_V2.Enumerations;
 
 namespace Assignment7_V2;
 

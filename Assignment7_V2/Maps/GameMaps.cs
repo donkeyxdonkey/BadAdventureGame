@@ -1,9 +1,8 @@
-﻿namespace Assignment7_V2
+﻿namespace Assignment7_V2;
+
+public enum GameMaps
 {
-    public enum GameMaps
-    {
-        Map1 = 1,
-        Map2,
-        Map3
-    }
+    Map1 = 1,
+    Map2,
+    Map3
 }

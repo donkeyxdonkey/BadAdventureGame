@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms; // for keypress & timer.
 using System.Drawing;
 using System.Drawing.Imaging;
+using Assignment7_V2.Enumerations;
 
 namespace Assignment7_V2
 {

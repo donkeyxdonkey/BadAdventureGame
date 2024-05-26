@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
+using Assignment7_V2.Enumerations;
 
 namespace Assignment7_V2
 {
@@ -393,7 +394,7 @@ namespace Assignment7_V2
             if (currentItem.Item1) // item found
             {
                 Point? itemTarget = Game.GameMenu.InteractionPoint;
-                Interactions?[] interaction = Game.Player.PlayerInventory.GetInteractions(currentItem.Item2, itemTarget);
+                Interactions?[] interaction = PlayerInventory.GetInteractions(currentItem.Item2, itemTarget);
                 return new Tuple<Interactions?[], Items>(interaction, currentItem.Item2);
             }
             else return null;
