@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
+using Assignment7_V2.Animations;
 using Assignment7_V2.Enumerations;
 
 namespace Assignment7_V2
