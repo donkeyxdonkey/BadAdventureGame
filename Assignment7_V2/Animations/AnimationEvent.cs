@@ -6,7 +6,7 @@ public class AnimationEvent
 {
     public Point Path => _path;
 
-    public ushort Delay => _delay;
+    public int Delay => _delay;
 
     public bool Visible => _visible;
 
@@ -15,13 +15,13 @@ public class AnimationEvent
     public RotateFlipType? FlipType => _flipType;
 
     private Point _path;
-    private ushort _delay;
+    private int _delay;
     private bool _visible;
     private string _message;
     private RotateFlipType? _flipType;
 
     /// <summary>Default constructor</summary>
-    public AnimationEvent(Point path, ushort delay, bool visible = true, string message = "", RotateFlipType? flipType = null)
+    public AnimationEvent(Point path, int delay, bool visible = true, string message = "", RotateFlipType? flipType = null)
     {
         _path = path;
         _delay = delay;
